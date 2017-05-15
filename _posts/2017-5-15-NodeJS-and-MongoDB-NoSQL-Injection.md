@@ -12,15 +12,18 @@ Putting all together<br/>
 ##### 1 : Set burp as proxy
 ##### 2 : Make an authentication test with random credentials
 ![test_request](/images/Capture du 2017-05-15 12-54-44.png)
+<br/>
 
 ##### 3 : Intercept and modify the request as below
 ```javascript
 user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ```
 ![intercept_request](/images/Capture du 2017-05-15 12-59-35.png)
+<br/>
 
 ##### or :
 ![intercept_request_2](/images/Capture du 2017-05-15 13-04-13.png)
+<br/>
 
 ##### 4 : You're now logged in as the first user in the database (which is often an administrator)
 ![get_logged_as_admin](/images/Capture du 2017-05-15 13-06-26.png)
