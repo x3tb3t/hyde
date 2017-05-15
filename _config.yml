@@ -7,20 +7,20 @@ permalink:        pretty
 relative_permalinks: false
 
 # Setup
-title:            Hyde
+title:            x3tb3t
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+url:              https://x3tb3t.github.io
 baseurl:          /
 
 author:
   name:           'x3tb3t'
-  url:            https://twitter.com/mdo
+  url:            https://x3tb3t.github.io
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          
 
 github:
   repo:           https://github.com/x3tb3t
