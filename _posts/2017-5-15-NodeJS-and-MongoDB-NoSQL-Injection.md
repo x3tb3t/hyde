@@ -8,7 +8,10 @@ On this post I will demonstrate how NoSQL can be injected.
 <a href="#authentication-bypass">Authentication bypass</a><br/>
 <a href="#users-enumeration">Users enumeration</a><br/>
 <a href="#dump-passwords">Dump passwords</a><br/>
-<a href="#putting-all-together-with-python">Putting all together with python</a><br/>
+<a href="#putting-all-together-with-python">Putting all together with python</a>
+
+<br/>
+<br/>
 
 ## Authentication Bypass ##
 ##### 1 : Set burp as proxy
