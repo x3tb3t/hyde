@@ -19,7 +19,6 @@ Putting all together<br/>
 user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ```
 ![intercept_request](/images/Capture du 2017-05-15 12-59-35.png)
-<br/>
 
 ##### or :
 ![intercept_request_2](/images/Capture du 2017-05-15 13-04-13.png)
