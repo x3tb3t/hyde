@@ -8,8 +8,8 @@ relative_permalinks: false
 
 # Setup
 title:            x3tb3t
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+tagline:          'offsec'
+description:      'Hacking stuff. <a href="#" target="_blank">x3tb3t@protonmail.com</a>.'
 url:              https://x3tb3t.github.io
 baseurl:          /
 
