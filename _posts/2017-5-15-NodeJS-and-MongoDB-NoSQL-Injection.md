@@ -24,7 +24,7 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ![intercept_request_2](/images/Capture du 2017-05-15 13-04-13.png)
 <br/>
 
-##### 4 : You're now logged in as the first user in the database (which is often an administrator)
+##### 4 : You're now logged as the first user stored in the database (often an admin)
 ![get_logged_as_admin](/images/Capture du 2017-05-15 13-06-26.png)
 
 <br/>
