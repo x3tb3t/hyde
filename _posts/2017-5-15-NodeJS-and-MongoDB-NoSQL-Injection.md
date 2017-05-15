@@ -63,8 +63,6 @@ Example :
 ```javascript
 user[$regex]=aaaa&pass[$gt]= through user[$regex]=zzzz&pass[$gt]= 
 ```
-<br/>
-<br/>
 One way to generate such a list with python :
 ```python
 patterns = [''.join(i) for i in product(ascii_lowercase, repeat = 4)] 
