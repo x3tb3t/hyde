@@ -131,8 +131,8 @@ So the password of the first user in the database is : admin
 
 The following python script first use the [$regex] query constructor to do a dictionary attack on usernames, then
 try to bruteforce them (aaa-ZZZ). <br/>
-Each time a valid user or regex pattern is found the script calculate the length of the corresponding password. <br/>
-Finally the script find the password and continue to the next user or pattern. <br/>
+Each time a valid user or regex pattern is found the script calculate the password length. <br/>
+Finally the script extract the passwords for each users and patterns found. <br/>
 
 ```python
 #!/usr/bin/env python2
