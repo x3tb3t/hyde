@@ -5,7 +5,7 @@ title: NodeJS and MongoDB NoSQL Injection
 
 Authentication bypass<br/>
 Users enumeration<br/>
-Dump Passwords<br/>
+Dump passwords<br/>
 Putting all together<br/>
 
 ## Authentication Bypass
