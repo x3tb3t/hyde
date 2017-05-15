@@ -33,7 +33,7 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ## User Enumeration
 
 This time we're going to use the query contructor [$regex] : <br/>
-```javascript
+```python
 .     : means any character
 .{5}  : means any character for position 5
 ```
