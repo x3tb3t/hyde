@@ -9,7 +9,7 @@ relative_permalinks: false
 # Setup
 title:            x3tb3t
 tagline:          'offsec'
-description:      'Hacking stuff. <a href="#" target="_blank">x3tb3t@protonmail.com</a>.'
+description:      'Penetration Testing.'
 url:              https://x3tb3t.github.io
 baseurl:          /
 
