@@ -11,7 +11,6 @@ On this post we'll see how NoSQL databases can be injected and dumped.
 <a href="#putting-all-together-with-python">Putting all together with python</a>
 
 <br/>
-<br/>
 
 ## Authentication Bypass ##
 ##### 1 : Set burp as proxy
