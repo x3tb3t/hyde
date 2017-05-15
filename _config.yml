@@ -14,7 +14,7 @@ url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
+  name:           'x3tb3t'
   url:            https://twitter.com/mdo
 
 paginate:         5
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/x3tb3t
