@@ -3,6 +3,8 @@ layout: post
 title: NodeJS and MongoDB NoSQL Injection
 ---
 
+On this post I will demonstrate how NoSQL can be injected. 
+
 <a href="#authentication-bypass">Authentication bypass</a><br/>
 <a href="#users-enumeration">Users enumeration</a><br/>
 <a href="#dump-passwords">Dump passwords</a><br/>
