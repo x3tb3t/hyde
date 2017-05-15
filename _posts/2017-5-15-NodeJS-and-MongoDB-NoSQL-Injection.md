@@ -3,9 +3,9 @@ layout: post
 title: NodeJS and MongoDB NoSQL Injection
 ---
 
-Authentication bypass (NoSQLi)<br/>
-Users enumeration (blind NoSQLi)<br/>
-Password cracking (blind NoSQLi)<br/>
+Authentication bypass<br/>
+Users enumeration<br/>
+Dump Passwords<br/>
 Putting all together<br/>
 
 ## Authentication Bypass
@@ -74,7 +74,7 @@ patterns = [''.join(i) for i in product(ascii_lowercase, repeat = 4)]
 <br/>
 <br/>
 
-## Password cracking
+## Dump passwords
 
 Once again we're going to use the query contructor [$regex].
 
@@ -95,7 +95,7 @@ So the password of the first user is 5 characters long.
 
 <br/>
 
-##### 2 : Password dump
+##### 2 : Retrieve password
 ```javascript
 user[$gt]=&pass[$regex]=a.{4}
 ```
