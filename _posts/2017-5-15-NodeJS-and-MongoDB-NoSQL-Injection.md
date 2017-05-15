@@ -11,7 +11,7 @@ Putting all together<br/>
 ## Authentication Bypass
 ##### 1 : Set burp as proxy
 ##### 2 : Make an authentication test with random credentials
-![placeholder]({{ site.baseurl }}/images/Capture du 2017-05-15 12-54-44.png)
+![test_request](https://x3tb3t.github.io/images/Capture du 2017-05-15 12-54-44.png)
 
 ##### 3 : Intercept and modify the request as below
 ```javascript
