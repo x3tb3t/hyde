@@ -4,11 +4,11 @@ title: NodeJS and MongoDB NoSQL Injection
 ---
 
 <a href="#Authentication bypass">Authentication bypass</a><br/>
-Users enumeration<br/>
+<a href="#Users enumeration">Users enumeration</a><br/>
 Dump passwords<br/>
 Putting all together<br/>
 
-## Authentication Bypass
+## Authentication Bypass ##
 ##### 1 : Set burp as proxy
 ##### 2 : Make an authentication test with random credentials
 ![test_request](/images/Capture du 2017-05-15 12-54-44.png)
@@ -30,7 +30,7 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 <br/>
 <br/>
 
-## User Enumeration
+## User Enumeration ##
 
 This time we're going to use the query contructor [$regex] : <br/>
 ```python
