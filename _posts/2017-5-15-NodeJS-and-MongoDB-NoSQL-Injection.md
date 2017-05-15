@@ -3,8 +3,8 @@ layout: post
 title: NodeJS and MongoDB NoSQL Injection
 ---
 
-<a href="#Authentication bypass">Authentication bypass</a><br/>
-<a href="#Users enumeration">Users enumeration</a><br/>
+<a href="#authentication-bypass">Authentication bypass</a><br/>
+<a href="#users-enumeration">Users enumeration</a><br/>
 Dump passwords<br/>
 Putting all together<br/>
 
