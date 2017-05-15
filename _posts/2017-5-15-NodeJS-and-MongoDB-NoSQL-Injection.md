@@ -19,10 +19,7 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 ```
 ![intercept_request](/images/Capture du 2017-05-15 12-59-35.png)
 
-##### or use
-```javascript
-user[$gt]=&pass[$gt]=
-```
+##### or :
 ![intercept_request_2](/images/Capture du 2017-05-15 13-04-13.png)
 
 ##### 4 : You're now logged in as the first user in the database (which is often an administrator)
