@@ -6,7 +6,7 @@ title: NodeJS and MongoDB NoSQL Injection
 <a href="#authentication-bypass">Authentication bypass</a><br/>
 <a href="#users-enumeration">Users enumeration</a><br/>
 <a href="#dump-passwords">Dump passwords</a><br/>
-<a href="#putting-all-together">Putting all together</a><br/>
+<a href="#putting-all-together-with-python">Putting all together with python</a><br/>
 
 ## Authentication Bypass ##
 ##### 1 : Set burp as proxy
@@ -123,7 +123,7 @@ So the password of the first user in the database is : admin
 <br/>
 <br/>
 
-## Putting all together ##
+## Putting all together with python##
 
 The following python script first use the [$regex] query constructor to do a dictionary attack on usernames, then
 try to bruteforce them (aaa-ZZZ). <br/>
