@@ -159,7 +159,7 @@ def view():
 	elapsed = timeit.default_timer() - start_time
 	m, s = divmod(elapsed, 60)
 	h, m = divmod(m, 60)
-	print str(len(ucreds)) + " unique passwords cracked in %d:%02d:%02d\n" % (h, m, s)
+	print str(len(ucreds)) + " unique passwords dumped in %d:%02d:%02d\n" % (h, m, s)
 	print "%-*s %s" % (25,"Password :","Regex patterns :")
 	for k, v in creds.iteritems():
 		print "%-*s %s" % (25,v,k)
