@@ -29,7 +29,6 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 <br/>
 
 ##### 4 : You're now logged as the first user stored in the database (often an admin)
-![get_logged_as_admin](/images/Capture du 2017-05-15 13-06-26.png)
 
 <br/>
 <br/>
