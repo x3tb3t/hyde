@@ -11,7 +11,7 @@ title:            x3tb3t
 tagline:          'offsec'
 description:      'Penetration Testing'
 url:              https://x3tb3t.github.io
-baseurl:          /
+baseurl:          '/'
 
 author:
   name:           'x3tb3t'
