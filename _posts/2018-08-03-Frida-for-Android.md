@@ -39,6 +39,7 @@ More information can be found on <a href="https://www.frida.re/">Frida website</
 * Python with pip
 * Rooted android device or emulator
 
+
 ##### Install Frida tools and python bindings on client (laptop)
 ```bash
 $ sudo pip install frida-tools
@@ -47,11 +48,9 @@ $ frida --version
 12.0.8
 ```
 
-<br/>
-
 ##### Install Frida server on android device or emulator
 
-First download the frida server build which belongs to your architecture (ARM, x86, x64, etc.) for the exact same version of frida on your client: https://github.com/frida/frida/releases
+First download the frida server build which belongs to your Android device architecture (ARM, x86, x64, etc.) with the exact same version of frida installed on your client: <a>https://github.com/frida/frida/releases</a>
 
 Then issue the following commands:
 ```bash
