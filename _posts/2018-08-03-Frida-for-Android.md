@@ -29,7 +29,7 @@ What can we do with dynamic code instrumentation ?
 
 - Add functions on the fly
 - Modify functions on the fly
-- Manage the memory (allocate data, scan, etc.)
+- Manage the memory (allocate/overwrite data, scan, etc.)
 - Retrieve arguments passed to functions
 - Retrieve return values of functions
 
@@ -38,7 +38,7 @@ What can we do with dynamic code instrumentation ?
 ## Setup frida for Android
 
 ##### Requirements
-* Install python with pip
+* Python with pip
 * Rooted android device or emulator
 
 <br/>
