@@ -27,11 +27,11 @@ More information can be found on <a href="https://www.frida.re/">Frida website</
 
 What can we do with dynamic code instrumentation ?
 
-Add functions on the fly
-Modify functions on the fly
-Manage the memory (allocate data, scan, etc.)
-Retrieve arguments passed to functions
-Retrieve return values of functions
+- Add functions on the fly
+- Modify functions on the fly
+- Manage the memory (allocate data, scan, etc.)
+- Retrieve arguments passed to functions
+- Retrieve return values of functions
 
 <br/>
 
@@ -185,7 +185,7 @@ sys.stdin.read()
 
 ## Hook java code
 
-In the following script we will log arguments and return value of a function and change them.
+In the following script we will log arguments and return value of a function and modify them on the fly.
 
 ```python
 hook_code = """
