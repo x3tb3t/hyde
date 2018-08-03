@@ -40,7 +40,7 @@ More information can be found on <a href="https://www.frida.re/">Frida website</
 * Rooted android device or emulator
 
 
-##### Install Frida tools and python bindings on client (laptop)
+##### Install Frida tools and python bindings on client
 ```bash
 $ sudo pip install frida-tools
 $ sudo pip install frida
