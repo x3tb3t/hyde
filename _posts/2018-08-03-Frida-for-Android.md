@@ -11,6 +11,7 @@ On this post we'll see how to setup Frida for Android and how to develop basic i
 <a href="#python-skeleton---spawn-a-process">Python skeleton - Spawn a process</a><br/>
 <a href="#hook-java-code">Hook java code</a><br/>
 <a href="#hook-native-code">Hook native code</a><br/>
+<a href="#hook-native-code-using-offset">Hook native code using offset</a><br/>
 
 <br/>
 
