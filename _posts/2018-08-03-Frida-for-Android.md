@@ -19,7 +19,7 @@ Frida is a tool which allow binary / process instrumentation.
 
 <br/>
 
-##### What is process instrumentation ?
+What is process instrumentation ?
 It is the fact of hooking functions to change the program behavior. 
 
 With instrumentation we can :
