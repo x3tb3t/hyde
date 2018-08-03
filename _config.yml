@@ -7,9 +7,9 @@ permalink:        pretty
 relative_permalinks: false
 
 # Setup
-title:            abasquin's security blog
+title:            abasquin
 tagline:          'offsec'
-description:      'Penetration Testing'
+description:      'Security blog'
 url:              https://x3tb3t.github.io
 baseurl:          /
 
