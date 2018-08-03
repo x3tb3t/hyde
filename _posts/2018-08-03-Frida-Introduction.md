@@ -128,7 +128,59 @@ sys.stdin.read()
 
 sys.exit(0)
 ```
+<br>
 
+## Python skeleton - Spawn a process
+
+```python
+#!/usr/bin/python
+
+'''
+Frida Android Skeleton - Spawn the process
+'''
+
+import frida
+import sys
+
+# define callback function to receive and output messages from server
+def get_messages_from_js(message, data):
+   print(message)
+   print(data)
+
+
+# define the application to hook
+app = 'com.test.myapp'
+
+hook_code = '''
+        
+        /*  Javascript code to manipulate the process  */
+
+'''
+
+device = frida.get_usb_device()
+
+# spawn the process
+p1 = device.spawn([app])
+
+# attach to the process
+process = device.attach(p1)
+
+# create script using hook_code variable above
+script = process.create_script(hook_code)
+
+# setup callback using function defined above
+script.on('message',get_messages_from_js)
+
+# load script into the process
+script.load()
+
+# Avoid app to freeze
+device.resume(p1)
+
+# read from stdin to keep script running
+sys.stdin.read()
+
+```
 
 ------------
 
