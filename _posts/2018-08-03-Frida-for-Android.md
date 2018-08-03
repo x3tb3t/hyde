@@ -50,7 +50,7 @@ $ frida --version
 
 ##### Install Frida server on android device or emulator
 
-First download the frida server build which belongs to your Android device architecture (ARM, x86, x64, etc.) with the exact same version of frida installed on your client: <a>https://github.com/frida/frida/releases</a>
+First download the frida server build which belongs to your Android device architecture (ARM, x86, x64, etc.) with the exact same version as frida installed on your client: <a>https://github.com/frida/frida/releases</a>
 
 Then issue the following commands:
 ```bash
