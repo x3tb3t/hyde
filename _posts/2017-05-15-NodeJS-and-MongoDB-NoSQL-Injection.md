@@ -3,7 +3,7 @@ layout: post
 title: NodeJS and MongoDB NoSQL Injection
 ---
 
-On this post we'll see how NoSQL databases can be injected and how to dump its content with python. 
+On this post we'll see how NoSQL databases can be injected. We'll see how to bypass an authentication and how to exploit a blind NoSQL injection with python. 
 
 <a href="#authentication-bypass">Authentication bypass</a><br/>
 <a href="#users-enumeration">Users enumeration</a><br/>
