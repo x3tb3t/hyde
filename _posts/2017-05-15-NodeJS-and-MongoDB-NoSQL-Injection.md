@@ -38,7 +38,7 @@ user=test&pass=test to user[$ne]=test&pass[$ne]=test
 This time we're going to use the query contructor [$regex] : <br/>
 ```python
 .     : means any character
-.{5}  : means any character at position 5
+.{5}  : means any 5 characters
 ```
 
 <br/>
