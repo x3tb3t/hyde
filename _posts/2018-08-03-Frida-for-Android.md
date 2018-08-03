@@ -15,7 +15,7 @@ On this post we'll see how to setup Frida for Android and how to develop basic i
 
 <br/>
 
-## What is Frida
+## What is Frida ?
 
 It’s Greasemonkey for native apps, or, put in more technical terms, it’s a dynamic code instrumentation toolkit. It lets you inject snippets of JavaScript or your own library into native apps on Windows, macOS, GNU/Linux, iOS, Android, and QNX. Frida also provides you with some simple tools built on top of the Frida API.
 
