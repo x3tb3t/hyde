@@ -5,7 +5,6 @@ title: Frida introduction - Android edition
 
 <a href="#what-is-frida">What is Frida</a><br/>
 <a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
-<a href="#basic-commands">Basic commands</a><br/>
 <a href="#python-skeleton---attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 
 <br/>
