@@ -61,7 +61,7 @@ $ adb shell "chmod 755 /data/local/tmp/frida-server"
 $ adb shell "/data/local/tmp/frida-server &"
 ```
 
-Frida server can also be start with options:
+Frida server can also be started with options:
 ```bash
 # listen on 127.0.0.1:27042 (the default)
 $ frida-server
