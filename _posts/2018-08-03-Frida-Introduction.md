@@ -184,10 +184,11 @@ sys.stdin.read()
 ```python
 hook_code = """
        
-// this method...
+// prevent timeout
 setImmediate(function() {
         console.log("[*] Starting script - Log / Manipulate args and retval");
-
+	
+	// ask java to execute code
         Java.perform(function() {   
             myClass = Java.use("com.test.myapp.sslpinning.PinningManager");
             myClass.checkServerTrusted.implementation = function(a, b) {
