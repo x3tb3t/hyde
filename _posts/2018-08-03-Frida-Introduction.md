@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frida introduction
+title: Frida introduction - Android edition
 ---
 
 Introduction to Frida 
@@ -10,6 +10,66 @@ Introduction to Frida
 <br/>
 
 ## What is Frida ##
+
+Frida is a tool which allow binary / process instrumentation.
+
+##### What is process instrumentation ?
+It is the fact of hooking functions to change the program behavior. 
+
+With instrumentation we can :
+Add functions on the fly
+Modify functions on the fly
+Manage the memory (allocate data, scan, etc.)
+Retrieve arguments passed to functions
+Retrieve return values of functions
+
+
+## Setup frida for Android ##
+
+##### Requirements
+
+##### On client
+```bash
+$ sudo pip install frida
+```
+
+##### On android device or emulator
+
+First download the frida server build which belongs to your architecture (ARM, x86, x64, etc.) for the exact same version of frida on your client: https://build.frida.re/frida/
+
+Then issue the following commands:
+```bash
+$ curl -O https://build.frida.re/frida/android/arm/bin/frida-server
+$ adb push frida-server /data/local/tmp/
+$ adb shell "chmod 755 /data/local/tmp/frida-server"
+$ adb shell "/data/local/tmp/frida-server &"
+```
+
+## Basic commands ##
+# listen on 127.0.0.1:27042 (the default)
+```bash
+$ frida-server
+
+# listen on all interfaces
+$ frida-server -l 0.0.0.0
+
+# listen on a specific interface
+$ frida-server -l 192.168.1.3
+
+# listen on a specific interface and port
+$ frida-server -l 192.168.1.3:1337
+
+# connect to specific IP
+$ frida-trace -H 192.168.1.3 -i "open*"
+
+# connect to specific IP/port
+$ frida-trace -H 192.168.1.3:1337 -i "open*"
+```
+
+
+
+
+------------
 
 ##### 1 : Set burp as proxy
 ##### 2 : Make an authentication test with random credentials
