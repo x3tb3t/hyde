@@ -46,8 +46,8 @@ $ adb shell "/data/local/tmp/frida-server &"
 ```
 
 ## Basic commands ##
-# listen on 127.0.0.1:27042 (the default)
 ```bash
+# listen on 127.0.0.1:27042 (the default)
 $ frida-server
 
 # listen on all interfaces
