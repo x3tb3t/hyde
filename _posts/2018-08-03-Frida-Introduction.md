@@ -80,6 +80,50 @@ $ frida-trace -H 192.168.1.3:1337 -i "open*"
 
 ## Python skeleton - Attach to a process
 
+```python
+#!/usr/bin/python
+
+'''
+Frida Android Skeleton - Attach to process
+'''
+
+import frida
+import sys
+
+# define callback function to receive and output messages from server
+def get_messages_from_js(message, data):
+   print(message)
+   print(data)
+
+
+# define the application to hook
+app = 'com.test.myapp'
+
+hook_code = '''
+        
+        /*  Frida Javascript code  */
+
+'''
+
+# get connect to frida server through emulator and attach to process
+session = frida.get_usb_device().attach(app)
+
+# create script using hook_code variable above
+script = session.create_script(hook_code)
+
+# setup callback using function defined above
+script.on('message', get_messages_from_js)
+
+# load script into the process
+script.load()
+
+# read from stdin to keep script running
+sys.stdin.read()
+
+sys.exit(0)
+```
+
+
 ------------
 
 ##### 1 : Set burp as proxy
