@@ -9,7 +9,8 @@ On this post we'll see how to setup Frida for Android and how to develop basic i
 <a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
 <a href="#python-skeleton---attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 <a href="#python-skeleton---spawn-a-process">Python skeleton - Spawn a process</a><br/>
-<a href="#manipulate-function-arguments-and-return-value">Manipulate function arguments and return value</a><br/>
+<a href="#hook-java-code">Hook java code</a><br/>
+<a href="#hook-native-code">Hook native code</a><br/>
 
 <br/>
 
@@ -179,7 +180,9 @@ sys.stdin.read()
 
 <br>
 
-## Manipulate function arguments and return value
+## Hook java code
+
+In the following script we will log arguments and return value of a function and change them.
 
 ```python
 hook_code = """
@@ -210,6 +213,41 @@ setImmediate(function() {
            }               
             console.log("[*] SSL pinning handler modified");
         });
+});
+"""
+```
+
+<br>
+
+## Hook native code
+
+```python
+hook_code = """
+
+Interceptor.attach(Module.findExportByName("libchallenge.so", "fopen"), {
+
+	onEnter: function (args) {
+    		file = Memory.readUtf8String(args[0]);
+	    	substr1 = "busybox";
+
+       		// Replace /proc/self/maps with a legit output
+	        if(file == '/proc/self/maps') {
+        	    	newFile = Memory.allocUtf8String('/data/local/tmp/legit_proc_self_maps'); 
+            		args[0] = newFile; 
+	            	console.log("[+] fopen : /proc/self/maps modified");	
+        	}
+
+	        // Replace files used for root detection
+        	if((file == '/sbin/su') || (file == '/system/app/Superuser.apk') || (file.indexOf(substr1) !== -1)) {
+        		newFile = Memory.allocUtf8String('/sbin/idonotexist');
+	        	args[0] = newFile;
+        		console.log("[+] fopen : " + file + " modified");
+	        }        	
+	},
+    
+    	onLeave: function (retval) {
+    	}
+	
 });
 """
 ```
