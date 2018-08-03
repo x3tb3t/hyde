@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frida introduction - Android edition
+title: Frida for Android
 ---
 
 On this post we'll see how to setup Frida for Android and how to develop basic instrumentation scripts.
