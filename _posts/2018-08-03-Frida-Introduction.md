@@ -7,6 +7,7 @@ title: Frida introduction - Android edition
 <a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
 <a href="#python-skeleton---attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 <a href="#python-skeleton---spawn-a-process">Python skeleton - Spawn a process</a><br/>
+<a href="#manipulate-function-arguments-and-return-value">Manipulate function arguments and return value</a><br/>
 
 <br/>
 
@@ -176,7 +177,7 @@ sys.stdin.read()
 
 <br>
 
-## Manipulate arguments and return value of a function
+## Manipulate function arguments and return value
 
 ```javascript
 hook_code = """
