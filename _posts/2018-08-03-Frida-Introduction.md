@@ -59,9 +59,7 @@ $ adb shell "chmod 755 /data/local/tmp/frida-server"
 $ adb shell "/data/local/tmp/frida-server &"
 ```
 
-<br/>
-
-## Basic commands
+Frida server can also be start with options:
 ```bash
 # listen on 127.0.0.1:27042 (the default)
 $ frida-server
@@ -74,12 +72,6 @@ $ frida-server -l 192.168.1.3
 
 # listen on a specific interface and port
 $ frida-server -l 192.168.1.3:1337
-
-# connect to specific IP
-$ frida-trace -H 192.168.1.3 -i "open*"
-
-# connect to specific IP/port
-$ frida-trace -H 192.168.1.3:1337 -i "open*"
 ```
 
 <br/>
