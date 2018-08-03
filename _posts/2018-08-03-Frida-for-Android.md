@@ -5,7 +5,7 @@ title: Frida for Android
 
 On this post we'll see how to setup Frida for Android and how to develop basic instrumentation scripts.
 
-<a href="#what-is-frida">What is Frida</a><br/>
+<a href="#what-is-frida-?">What is Frida ?</a><br/>
 <a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
 <a href="#python-skeleton---attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 <a href="#python-skeleton---spawn-a-process">Python skeleton - Spawn a process</a><br/>
@@ -15,7 +15,7 @@ On this post we'll see how to setup Frida for Android and how to develop basic i
 
 <br/>
 
-## What is Frida
+## What is Frida ?
 
 It’s Greasemonkey for native apps, or, put in more technical terms, it’s a dynamic code instrumentation toolkit. It lets you inject snippets of JavaScript or your own library into native apps on Windows, macOS, GNU/Linux, iOS, Android, and QNX. Frida also provides you with some simple tools built on top of the Frida API.
 
