@@ -8,6 +8,7 @@ relative_permalinks: false
 
 # Setup
 title:            x3tb3t
+image:            https://x3tb3t.github.io/logo.jpg
 tagline:          'offsec'
 description:      'Penetration Testing'
 url:              https://x3tb3t.github.io
