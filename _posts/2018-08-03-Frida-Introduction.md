@@ -3,13 +3,14 @@ layout: post
 title: Frida introduction - Android edition
 ---
 
-Introduction to Frida 
-
 <a href="#what-is-frida">What is Frida</a><br/>
+<a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
+<a href="#basic-commands">Basic commands</a><br/>
+<a href="#python-skeleton-attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 
 <br/>
 
-## What is Frida ##
+## What is Frida
 
 Frida is a tool which allow binary / process instrumentation.
 
@@ -27,7 +28,7 @@ Retrieve return values of functions
 
 <br/>
 
-## Setup frida for Android ##
+## Setup frida for Android
 
 ##### Requirements
 
@@ -54,7 +55,7 @@ $ adb shell "/data/local/tmp/frida-server &"
 
 <br/>
 
-## Basic commands ##
+## Basic commands
 ```bash
 # listen on 127.0.0.1:27042 (the default)
 $ frida-server
@@ -77,7 +78,7 @@ $ frida-trace -H 192.168.1.3:1337 -i "open*"
 
 <br/>
 
-
+## Python skeleton - Attach to a process
 
 ------------
 
