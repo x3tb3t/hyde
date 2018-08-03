@@ -229,7 +229,7 @@ Interceptor.attach(Module.findExportByName("libchallenge.so", "fopen"), {
 
 	onEnter: function (args) {
     		file = Memory.readUtf8String(args[0]);
-	    	substr = "busybox";
+	    	pattern = "busybox";
 
        		// Replace /proc/self/maps with a legit output
 	        if(file == '/proc/self/maps') {
@@ -239,7 +239,7 @@ Interceptor.attach(Module.findExportByName("libchallenge.so", "fopen"), {
         	}
 
 	        // Replace files used for root detection
-        	if((file == '/sbin/su') || (file.indexOf(substr) !== -1)) {
+        	if((file == '/sbin/su') || (file.indexOf(pattern) !== -1)) {
         		newFile = Memory.allocUtf8String('/sbin/idonotexist');
 	        	args[0] = newFile;
         		console.log("[+] fopen : " + file + " modified");
