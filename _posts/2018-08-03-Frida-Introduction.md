@@ -13,6 +13,8 @@ Introduction to Frida
 
 Frida is a tool which allow binary / process instrumentation.
 
+<br/>
+
 ##### What is process instrumentation ?
 It is the fact of hooking functions to change the program behavior. 
 
@@ -23,15 +25,20 @@ Manage the memory (allocate data, scan, etc.)
 Retrieve arguments passed to functions
 Retrieve return values of functions
 
+<br/>
 
 ## Setup frida for Android ##
 
 ##### Requirements
 
+<br/>
+
 ##### On client
 ```bash
 $ sudo pip install frida
 ```
+
+<br/>
 
 ##### On android device or emulator
 
@@ -44,6 +51,8 @@ $ adb push frida-server /data/local/tmp/
 $ adb shell "chmod 755 /data/local/tmp/frida-server"
 $ adb shell "/data/local/tmp/frida-server &"
 ```
+
+<br/>
 
 ## Basic commands ##
 ```bash
@@ -66,6 +75,7 @@ $ frida-trace -H 192.168.1.3 -i "open*"
 $ frida-trace -H 192.168.1.3:1337 -i "open*"
 ```
 
+<br/>
 
 
 
