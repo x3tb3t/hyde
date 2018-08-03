@@ -90,18 +90,18 @@ Frida Android Skeleton - Attach to process
 import frida
 import sys
 
-# define callback function to receive and output messages from server
+# Define callback function to receive and output messages from server
 def get_messages_from_js(message, data):
    print(message)
    print(data)
 
 
-# define the application to hook
+# Define the application to hook
 app = 'com.test.myapp'
 
 hook_code = '''
         
-        /*  Frida Javascript code  */
+        /*  Javascript code to manipulate the process  */
 
 '''
 
