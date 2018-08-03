@@ -252,9 +252,27 @@ Interceptor.attach(Module.findExportByName("libchallenge.so", "fopen"), {
 """
 ```
 
-------------
+<br>
 
-##### 1 : subtitle
-![test_request](/images/Capture du 2017-05-15 12-54-44.png)
-<br/>
+## Hook native code using offset
+
+```python
+hook_code = """
+    
+console.log("[*] Starting script");
+console.log('libchallenge base address : ' + Module.findBaseAddress('libchallenge.so'));
+
+Interceptor.attach(Module.findBaseAddress("libchallenge.so").add('0x4321'),  {
+            
+	onEnter: function (args) {
+		this.fileDescriptor = args[0];
+	        console.log(Memory.readUtf8String(this.fileDescriptor));
+      	},
+            
+	onLeave: function (retval) {
+                console.log(retval);
+        }   
+});
+"""
+```
 
