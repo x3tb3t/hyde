@@ -21,10 +21,6 @@ It’s Greasemonkey for native apps, or, put in more technical terms, it’s a d
 
 Frida’s core is written in C and injects Google’s V8 engine into the target processes, where your JS gets executed with full access to memory, hooking functions and even calling native functions inside the process. There’s a bi-directional communication channel that is used to talk between your app and the JS running inside the target process.
 
-More information can be found on <a href="https://www.frida.re/">Frida website</a>.
-
-<br/>
-
 What can we do with dynamic code instrumentation ?
 
 - Add functions on the fly
@@ -32,6 +28,8 @@ What can we do with dynamic code instrumentation ?
 - Manage the memory (allocate/overwrite data, scan, etc.)
 - Retrieve arguments passed to functions
 - Retrieve return values of functions
+
+More information can be found on <a href="https://www.frida.re/">Frida website</a>.
 
 <br/>
 
