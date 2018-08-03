@@ -31,24 +31,30 @@ Retrieve return values of functions
 ## Setup frida for Android
 
 ##### Requirements
+* Install python with pip
+* Rooted android device or emulator
 
 <br/>
 
-##### On client
+##### Install Frida tools and python bindings on client (laptop)
 ```bash
+$ sudo pip install frida-tools
 $ sudo pip install frida
+$ frida --version
+12.0.8
 ```
 
 <br/>
 
-##### On android device or emulator
+##### Install Frida server on android device or emulator
 
-First download the frida server build which belongs to your architecture (ARM, x86, x64, etc.) for the exact same version of frida on your client: https://build.frida.re/frida/
+First download the frida server build which belongs to your architecture (ARM, x86, x64, etc.) for the exact same version of frida on your client: https://github.com/frida/frida/releases
 
 Then issue the following commands:
 ```bash
-$ curl -O https://build.frida.re/frida/android/arm/bin/frida-server
-$ adb push frida-server /data/local/tmp/
+$ wget https://github.com/frida/frida/releases/download/12.0.8/frida-server-12.0.8-android-x86.xz
+$ unxz frida-server-12.0.8-android-x86.xz
+$ adb push frida-server-12.0.8-android-x86 /data/local/tmp/frida-server
 $ adb shell "chmod 755 /data/local/tmp/frida-server"
 $ adb shell "/data/local/tmp/frida-server &"
 ```
