@@ -5,7 +5,7 @@ title: Frida for Android
 
 On this post we'll see how to setup Frida for Android and how to develop basic instrumentation scripts.
 
-<a href="#what-is-frida-?">What is Frida ?</a><br/>
+<a href="#what-is-frida">What is Frida ?</a><br/>
 <a href="#setup-frida-for-android">Setup Frida for Android</a><br/>
 <a href="#python-skeleton---attach-to-a-process">Python skeleton - Attach to a process</a><br/>
 <a href="#python-skeleton---spawn-a-process">Python skeleton - Spawn a process</a><br/>
