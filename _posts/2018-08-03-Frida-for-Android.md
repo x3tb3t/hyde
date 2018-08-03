@@ -41,8 +41,6 @@ What can we do with dynamic code instrumentation ?
 * Python with pip
 * Rooted android device or emulator
 
-<br/>
-
 ##### Install Frida tools and python bindings on client (laptop)
 ```bash
 $ sudo pip install frida-tools
