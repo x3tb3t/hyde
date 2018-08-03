@@ -4,7 +4,7 @@ title: About me
 ---
 
 ### Alexandre Basquin
-########### Penetration tester (OSCP, OSCE).
+Penetration tester (OSCP, OSCE).
 
 Passionate about offensive security for many years, I love to challenge myself to find critical issues. 
 
