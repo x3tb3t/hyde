@@ -181,10 +181,10 @@ sys.stdin.read()
 
 ## Manipulate function arguments and return value
 
-```javascript
+```python
 hook_code = """
        
-//
+// this method...
 setImmediate(function() {
         console.log("[*] Starting script - Log / Manipulate args and retval");
 
